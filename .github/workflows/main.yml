@@ -14,7 +14,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 'Testing Githup action'
+      - name: 'Befoer'
         run: pwd
 
-       
+      - uses: actions/checkout@v3 
+
+      - name: 'After'
+        run: pwd
