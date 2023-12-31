@@ -15,9 +15,9 @@ jobs:
 
     steps:
       - name: 'Befoer'
-        run: pwd
+        run: ls
 
       - uses: actions/checkout@v3 
 
       - name: 'After'
-        run: pwd
+        run: ls -a
