@@ -2,8 +2,8 @@ FROM openjdk
 
 WORKDIR /application
 
-COPY Programin3_Project.java .
+COPY NewJFrame.java .
 
-RUN javac Programin3_Project.java 
+RUN javac NewJFrame.java
 
-CMD java Programin3_Project
+CMD java NewJFrame.java
