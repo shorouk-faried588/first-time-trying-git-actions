@@ -17,12 +17,12 @@ jobs:
       - uses: actions/checkout@v3 
 
       - name: "Login to Docker hub"
-        run: docker login --username ${{ secrets.USER_NAME }} --password ${{ secrets.DOCKER_TOKEN }}
+        run: docker login --username ${{ secrets.DOCKER_USER }} --password ${{ secrets.DOCKER_TOKEN }}
 
       - name: "Bulding docker image"
-        run: docker build -t ${{ secrets.USER_NAME }}/me .
+        run: docker build -t ${{ secrets.DOCKER_USER }}/me .
 
       - name: "Pushing to Docker hup"  
-        run: docker push ${{ secrets.USER_NAME }}/me
+        run: docker push ${{ secrets.DOCKER_USER }}/me
 
       
